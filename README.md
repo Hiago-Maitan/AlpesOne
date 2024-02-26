@@ -28,7 +28,7 @@ abrir arquivo index.html
 
 Esse projeto está sob a licença MIT.
 
-[Clique aqui](hiago-maitan.github.io/AlpesOne/) para ver o projeto online.
+[Clique aqui](https://hiago-maitan.github.io/AlpesOne/) para ver o projeto online.
 
 ---
 
