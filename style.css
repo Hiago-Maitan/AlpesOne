@@ -89,7 +89,7 @@ header nav .nav-container .nav-itens .nav-flex h6:hover {
 header .slider-container {
   width: 100%;
   height: 85vh;
-  background-image: url("../assets/imgs/banner/desktop-.jpg");
+  background-image: url("./assets/imgs/banner/desktop-.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -477,7 +477,7 @@ footer .footer-container .footer-logos .copyright {
 
   header .slider-container {
     height: 80vh;
-    background-image: url("../assets/imgs/banner/mobile-banner.png");
+    background-image: url("./assets/imgs/banner/mobile-banner.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
