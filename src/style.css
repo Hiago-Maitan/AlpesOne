@@ -1,0 +1,541 @@
+/* Import Fonts */
+@font-face {
+  font-family: "BMW";
+  src: url("./fonts/BMWTypeNext-Light.20210426144302.ttf") format("truetype"),
+    url("fonts/BMWTypeNext-Bold.20210426144302.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: BMW, Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+}
+
+header .mobile-nav,
+.form-mobile {
+  display: none;
+}
+
+header nav {
+  width: 100%;
+  height: 15vh;
+  padding: 4rem 8rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .nav-container .nav-itens {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+header nav .nav-container .nav-itens .nav-btn {
+  display: flex;
+  gap: 30px;
+}
+
+header nav .nav-container .nav-itens .nav-btn button {
+  display: flex;
+  align-items: center;
+  padding: 12px 18px;
+  gap: 6px;
+
+  background-color: #000000;
+  color: #ffffff;
+  fill: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+header nav .nav-container .nav-itens .nav-btn button:hover {
+  background-color: #575757;
+  transition: 0.5s;
+}
+
+header nav .nav-container .nav-itens .nav-btn button.wpp:hover {
+  background-color: #35aa61;
+  transition: 0.5s;
+}
+
+header nav .nav-container .nav-itens .nav-btn button.wpp {
+  background-color: #25d366;
+}
+
+header nav .nav-container .nav-itens .nav-flex {
+  display: flex;
+  color: #666666;
+  gap: 58px;
+  font-size: 14px;
+  margin-bottom: 1px;
+}
+
+header nav .nav-container .nav-itens .nav-flex h6:hover {
+  border-bottom: 1px solid #666666;
+  cursor: pointer;
+  outline: 0;
+}
+
+header .slider-container {
+  width: 100%;
+  height: 85vh;
+  background-image: url("../src/assets/imgs/banner/desktop-.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 120px;
+}
+
+header .slider-container .form-container {
+  display: flex;
+  justify-content: end;
+}
+
+header .slider-container .form-container form {
+  display: flex;
+  flex-direction: column;
+  width: 255px;
+  height: 478px;
+  background-color: #ffffff;
+  padding: 10px 20px;
+}
+
+.form-mobile .formMobile-container {
+  height: 70vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.slider-container .form-container .title {
+  margin: 14px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.slider-container .form-container .title h5 {
+  font-size: 20px;
+  font-weight: lighter;
+  color: #000000;
+}
+
+.slider-container .form-container .input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: #666666;
+}
+
+.slider-container .form-container .input-container input,
+.slider-container .form-container .input-container select {
+  padding-bottom: 10px;
+  color: #666666;
+  border-bottom: 1px solid #bbbbbb;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.slider-container .form-container .input-container input:hover,
+.slider-container .form-container .input-container select:hover {
+  border-bottom: 2px solid #bbbbbb;
+}
+
+.slider-container .form-container .input-container input:focus,
+.slider-container .form-container .input-container select:focus {
+  border-bottom: 2px solid #1c69d4;
+  outline: 0;
+}
+
+.slider-container .form-container .input-container .checkbox-content {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.slider-container
+  .form-container
+  .input-container
+  .checkbox-content
+  label
+  span {
+  font-weight: 600;
+}
+
+.slider-container .form-container button {
+  height: 7vh;
+  background-color: #1c69d4;
+  color: #ffffff;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.slider-container .form-container button:hover {
+  background-color: #0351be;
+  transition: 0.5s;
+}
+/* End Form Container */
+
+main {
+  margin-top: 3rem;
+  padding: 2rem 5rem;
+  /* padding: 2.5rem 3rem 2.5rem 17.81rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main h3 {
+  font-weight: 400;
+  font-size: 2.2rem;
+  margin-bottom: 3.7rem;
+  text-align: center;
+}
+
+.cars-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem;
+  gap: 1.5rem;
+}
+
+.cars-wrapper .car-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 15rem;
+  padding: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.cars-wrapper .car-card .car-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 1rem;
+}
+
+.cars-wrapper .car-card .car-img img {
+  width: 80%;
+}
+
+.cars-wrapper .car-card .car-img {
+  margin-bottom: 1rem;
+}
+
+.cars-wrapper .car-card .car-img:hover {
+  opacity: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.cars-wrapper .car-card .car-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cars-wrapper .car-card .car-info h4 {
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.cars-wrapper .car-card .car-info .btn-container button {
+  background-color: #1c69d4;
+  color: #ffffff;
+  border: none;
+  padding: 0.9rem 6.9rem;
+  max-width: 14rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cars-wrapper .car-card .car-info .btn-container button:hover {
+  background-color: #0351be;
+  transition: 0.7s;
+}
+
+.cars-wrapper .car-card .car-info .btn-container .btn-gray {
+  display: none;
+}
+
+.cars-wrapper .car-card .car-info .icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  color: #666666;
+  fill: #666666;
+}
+
+.cars-wrapper .car-card .car-info .icons span {
+  font-size: 0.75rem;
+}
+
+.cars-wrapper .car-card .car-info .icons svg:hover {
+  fill: #1c69d4;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  height: 100%;
+  padding: 2rem 5rem;
+  background: #e6e6e6;
+  color: #262626;
+}
+
+footer .footer-container .text-footer {
+  font-size: 0.87rem;
+  text-align: center;
+  border-bottom: 1px solid #262626;
+  padding-bottom: 2.5rem;
+  margin-bottom: 3.5rem;
+}
+
+footer .footer-container .footer-logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.06rem;
+}
+
+footer .footer-container .footer-logos .copyright {
+  font-size: 12px;
+}
+
+/* Responsive */
+@media (max-width: 1080px) {
+  header nav {
+    padding: 4rem 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  /* header mobile */
+  header .mobile-nav {
+    display: block;
+    height: 20vh;
+  }
+
+  header section.slider-container div.form-container form {
+    display: none;
+  }
+
+  header .mobile-nav .content {
+    display: flex;
+    height: 10vh;
+    padding: 21px 16px;
+    align-items: center;
+    justify-content: space-between;
+    color: #666666;
+    fill: #666666;
+    font-weight: 600;
+  }
+
+  header .mobile-nav .content .number-content {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  header .mobile-nav button {
+    height: 10vh;
+    width: 100%;
+
+    cursor: pointer;
+    background-color: #1c69d4;
+    border: none;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  /* Form Mobile */
+  .form-mobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    color: #fff;
+  }
+
+  .form-mobile .btn-formMobile {
+    height: 7vh;
+    width: 100%;
+    background-color: #666666;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .form-mobile .formMobile-container {
+    height: 70vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .form-mobile .formMobile-container .title {
+    margin: 14px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .form-mobile .formMobile-container .title h5 {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #000000;
+  }
+
+  .form-mobile .formMobile-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #666666;
+  }
+
+  .form-mobile .formMobile-container form input,
+  .form-mobile .formMobile-container form select {
+    padding-bottom: 10px;
+    color: #666666;
+    border-bottom: 1px solid #bbbbbb;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+
+  .form-mobile .formMobile-container form input:hover,
+  .form-mobile .formMobile-container form select:hover {
+    border-bottom: 2px solid #bbbbbb;
+  }
+
+  .form-mobile .formMobile-container form input:focus,
+  .form-mobile .formMobile-container form select:focus {
+    border-bottom: 2px solid #1c69d4;
+    outline: 0;
+  }
+
+  .form-mobile .formMobile-container form .checkbox-content {
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  .form-mobile .formMobile-container form .checkbox-content label span {
+    font-weight: 600;
+  }
+
+  .form-mobile .formMobile-container form button {
+    height: 7vh;
+    background-color: #1c69d4;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+  }
+
+  .form-mobile .formMobile-container form button:hover {
+    background-color: #0351be;
+    transition: 0.5s;
+  }
+  /* End Form Mobile */
+
+  header nav {
+    display: none;
+  }
+
+  header .slider-container {
+    height: 80vh;
+    background-image: url("../src/assets/imgs/banner/mobile-banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  /* End header mobile */
+
+  main {
+    padding: 2rem 0;
+  }
+
+  main h3 {
+    font-size: 1.5rem;
+  }
+
+  .cars-wrapper .car-card {
+    width: 22rem;
+  }
+
+  .cars-wrapper .car-card {
+    width: 22rem;
+  }
+
+  .cars-wrapper .car-card .car-img img {
+    width: 100%;
+  }
+
+  .cars-wrapper .car-card .car-info .btn-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cars-wrapper .car-card .car-info .btn-container button {
+    padding: 0.6rem 3.7rem;
+  }
+
+  .cars-wrapper .car-card .car-info .btn-container .btn-gray {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #666666;
+  }
+
+  .cars-wrapper .car-card .car-info .btn-container .btn-gray:hover {
+    background-color: #575757;
+    transition: 0.5s;
+  }
+
+  footer {
+    padding: 2rem 1rem;
+  }
+
+  footer .footer-logos {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  footer .footer-logos svg {
+    display: none;
+  }
+}
